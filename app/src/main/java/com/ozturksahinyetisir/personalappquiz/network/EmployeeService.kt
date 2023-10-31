@@ -6,8 +6,5 @@ import retrofit2.http.GET
 
 interface EmployeeService {
     @GET("/api/v1/employees")
-    public fun getEmployees() : Call<Employees>
-
-
-
+    fun getEmployees() : Call<Employees>
 }

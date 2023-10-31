@@ -21,12 +21,15 @@ import com.ozturksahinyetisir.personalappquiz.ui.theme.PersonalAppQuizTheme
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import retrofit2.Retrofit
+import javax.inject.Inject
 
 
-class ComposeResponse {
+class ComposeResponse @Inject constructor(private val retrofit: Retrofit) {
     lateinit var employeeList: MutableList<Employee>
+
     fun fetchDataAndDisplay(activity: ComponentActivity) {
-        val employeeService = ApiClient.getClient().create(EmployeeService::class.java)
+        val employeeService = retrofit.create(EmployeeService::class.java)
         val service = employeeService.getEmployees()
 
         service.enqueue(object : Callback<Employees> {

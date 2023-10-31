@@ -8,6 +8,7 @@
 - [Json2Kt](https://json2kt.com/) can useable for creating model data class. Also check Json2Kotlin plugin inside Android Studio.
 - [JsonBeautify](https://codebeautify.org/jsonviewer) makes your json data beautifier.
 - [Check API Levels](https://apilevels.com/) Also you can see cumulative usage.
+- [Hilt](https://developer.android.com/training/dependency-injection/hilt-android?) Dependency Injection (Hilt).
 
 
 ## Screenshot of APP
